@@ -1,0 +1,8 @@
+<div class="jumbotron">
+  <h1>Hello, Elixir Melbourne!</h1>
+</div>
+
+<div>
+  <p> Secret: <%= secret %> </p>
+  <p> Runtime: <%= at_runtime %> </p>
+</div>

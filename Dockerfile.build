@@ -1,0 +1,13 @@
+FROM elixir:1.3
+
+RUN mkdir -p /app/deps
+
+RUN mix local.hex --force
+# RUN mix local.rebar --force
+COPY tini-static /tini-static
+
+VOLUME /app
+WORKDIR /app
+
+ENTRYPOINT ["/tini-static", "--"]
+CMD mix do compile, phoenix.digest, release --verbose
