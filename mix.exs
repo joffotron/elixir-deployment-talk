@@ -17,7 +17,7 @@ defmodule DeployTalk.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {DeployTalk, []},
-     applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,:config]]
+     applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext]]
   end
 
   # Specifies which paths to compile per environment.
@@ -35,8 +35,7 @@ defmodule DeployTalk.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
-     {:distillery, "~> 0.10"},
-     {:config, github: "renderedtext/ex-config"}
+     {:distillery, "~> 0.10"}
    ]
   end
 end
