@@ -23,4 +23,5 @@ erl_crash.dump
 # variables.
 /config/prod.secret.exs
 /rel/deploy_talk
-
+.idea
+/deploytalk.iml
